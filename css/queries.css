@@ -1,0 +1,21 @@
+@media only screen and (min-width: 1200px){
+
+}
+ 
+
+/* start of large tablet styles */
+@media only screen and (max-width: 991px){
+
+}
+
+/* start of medium tablet styles */  
+@media only screen and (max-width: 767px){
+
+}
+  
+  /* start of phone styles */
+@media only screen and (max-width: 479px){
+  .my_name{
+    font-size: 15vw;
+  }
+}

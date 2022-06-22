@@ -1,0 +1,137 @@
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+@keyframes blinkingText {
+  0% {
+    color: inherit;
+  }
+  49% {
+    color: inherit;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: inherit;
+  }
+}
+
+
+.main_container {
+  background: linear-gradient(306deg, #7a8c88, #092d24);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 43s ease infinite;
+  -moz-animation: gradientBG 43s ease infinite;
+  -o-animation: gradientBG 43s ease infinite;
+  animation: gradientBG 43s ease infinite;
+}
+
+@-webkit-keyframes gradientBG {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@-moz-keyframes gradientBG {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@-o-keyframes gradientBG {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+@keyframes gradientBG {
+  0%{background-position:2% 0%}
+  50%{background-position:99% 100%}
+  100%{background-position:2% 0%}
+}
+
+
+.has-animation {
+  position: relative;
+}
+.has-animation.animate-in p, .has-animation.animate-in img {
+  animation: textHidden 0.1s 1.1s forwards;
+}
+.has-animation.animate-in:before, .has-animation.animate-in:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 10;
+}
+.has-animation.animate-in:before {
+  background-color: teal;
+}
+.has-animation.animate-in:after {
+  background-color: yellowgreen;
+  animation-delay: .5s;
+}
+.has-animation.animation-ltr.animate-in:before {
+  animation: revealLTR 1.8s ease;
+}
+.has-animation.animation-ltr.animate-in:after {
+  animation: revealLTR 1s .6s ease;
+}
+.has-animation.animation-rtl.animate-in:before {
+  animation: revealRTL 1.8s ease;
+}
+.has-animation.animation-rtl.animate-in:after {
+  animation: revealRTL 1s .6s ease;
+}
+
+@keyframes revealRTL {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  65% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+@keyframes revealLTR {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  65% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes revealUTD {
+  0% {
+    height: 0;
+    top: 0;
+  }
+  65% {
+    height: 100%;
+    top: 0;
+  }
+  100% {
+    height: 0;
+    top: 100%;
+  }
+}
+@keyframes textHidden {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
