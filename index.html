@@ -5,14 +5,13 @@
   <link rel="shortcut icon" href="imgs/dev.png" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <script src="js/three.r92.min.js"></script>
   <script src="js/vanta.fog.min.js"></script>
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/queries.css" rel="stylesheet" />
   <link href="css/effects.css" rel="stylesheet" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics 
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-L4G129Z74C"
@@ -25,6 +24,7 @@
     gtag("js", new Date());
     gtag("config", "G-L4G129Z74C");
   </script>
+  -->
 </head>
 
 
@@ -33,18 +33,22 @@
 
     <div id="front_page">
       <div class="front_page_intro">
-        hey, I am <br />
-        <div class="header center_content">
-          <div class="my_name">
-            odinaka
-          </div>
-          <div class="my_job has-animation animation-ltr" data-delay="10">
-            developer.
+        <div class="header">
+          hey, I am <br />
+          <div class="header_body center_content">
+            <div class="my_name">
+              odinaka
+            </div>
+            <div class="my_job has-animation animation-ltr" data-delay="10">
+              developer.
+            </div>
           </div>
         </div>
+        <div class="header_below"></div>
+
 
         <div class="intro_board">
-          <p style="margin-top: 20px;">
+          <p class="intro_txt" style="margin-top: 20px;">
             I design and build web products.<br />
             New experiences and challenges are my thing.<br />
             Have you got a great new idea,<br />
@@ -53,15 +57,62 @@
           </p>
           
           <a href="mailto:odinaka.hey@gmail.com">
-            <button class="get_in_touch_btn has-animation animation-ltr" data-delay="500"> Get in touch! </button>
+            <button class="get_in_touch_btn has-animation animation-ltr" data-delay="500"> Get in touch </button>
           </a>
           
           <div style="margin-top: 50px;">
             <button class="button jounal_btn has-animation animation-rtl" data-delay="1000"> My Journal </button>
 
-            <button class="button about_btn has-animation animation-ltr" data-delay="2000"> About Me </button>
+            <button class="button about_btn has-animation animation-ltr" data-delay="2000"> More About Me </button>
           </div>
         </div>
+
+        <div class="about_board display_none">
+          <div style="display: flex;width: 100%;">
+
+            <div class="about_txt" style="min-width: 300px;">
+              <p style="margin-top: 20px;">
+                I develop, manage the front-end and back-end of web applications and also support agencies with creative development.
+                <br />
+                Whether you're setting up an intranet for your company, a project web app for your team, a portal for customers, or just trying to revamp and tell a new story on your webpage. I can be a part of the development that works on all the steps of the web application. 
+              </p>
+
+              <div style="position:relative; text-align:right; margin-left: 10px; margin-top: 20px; padding:4px; background: #2c363a;width: fit-content;">
+                Full-stack Developer
+                <img src="imgs/stack.png" alt="stack">
+                <br/>
+                LAMP | MERN
+              </div>
+              
+              <div style="text-align:left; margin-left: 10px; margin-top: 20px; padding:4px; background: #2c363a;width: fit-content;">                
+                Catch-up <br/>
+                Github Linkedin Twitter
+              </div>
+
+            </div>
+
+            <div>
+              <div style="background: #caafca;width:300px;border-radius: 50%;">
+                <img src="imgs/odinaka.png" alt="odinaka" style="width:100%;border-radius: 35%;">
+              </div>              
+              <div style="position: relative; background: black;border:5px solid #3334; text-align: right;
+              margin-top: -15%;padding:10px;">              
+                <div style="background: black;font-size: 150%;font-weight: 600;">
+                  Emmanuel Odinaka
+                </div>
+                <hr />
+                <div class="test" style="background: black;font-size: 90%;">
+                  <span>Creative Developer <br></span>
+                  <span style="font-stretch:expanded;">Drum Enthusiast <br></span>
+                  <span>Tea Connoisseur <br></span>
+                  <span>Sleepy Head <br></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>      
     </div>
     
@@ -70,8 +121,6 @@
 
   <!-- BOTTOM SCRIPTS -->
   <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script>
     fog_speed = 0.5;
     VANTA.FOG({

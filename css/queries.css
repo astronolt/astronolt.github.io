@@ -1,5 +1,7 @@
 @media only screen and (min-width: 1200px){
-
+  .header{
+    margin-top: 10%;
+  } 
 }
  
 
@@ -15,7 +17,17 @@
   
   /* start of phone styles */
 @media only screen and (max-width: 479px){
+  .header{
+    margin-top: 25%;
+  } 
   .my_name{
     font-size: 15vw;
+  }
+}
+
+/* start of phone styles */
+@media only screen and (max-width: 163px){
+  .header {
+    display: block;
   }
 }

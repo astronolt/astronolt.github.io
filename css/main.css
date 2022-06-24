@@ -1,7 +1,7 @@
 /*
 @import url("caprum.css");
-@import url("titillium-web.css");
 */
+@import url("titillium-web.css");
 @import url("fira-code.css");
 
 html,
@@ -11,13 +11,12 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background: #12aee1;
+  background: #353a3b;
   overflow: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   /*
   font-family: "Cuprum";
-  font-family: "Titillium Web";
   */
   font-family: "Fira Code";
 }
@@ -119,6 +118,10 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+img .responsive {
+  width: 100%;
+  height: auto;
+}
 table,
 th,
 td {
@@ -138,6 +141,7 @@ td {
   border-radius: 0;
   margin: 5px;
   cursor: pointer;
+  min-height: 35px;
 }
 .button:hover {
   background: #444;
@@ -163,6 +167,13 @@ td {
   color: blue;
   border-radius: 2%;
   background: #335532;
+}
+
+#first_loader {
+  width: 100vw;
+  height: 100vh;
+  background: #111 url("../imgs/icon_loading.gif") no-repeat center center;
+  background-size: 50px 50px;
 }
 
 #page_frame {
@@ -192,27 +203,30 @@ td {
   padding: 3px;
   line-height: 1;
   text-align: center;
-  max-width: 1000px;
   width: 100%;
   margin: auto;
   padding-top: 15px;
   position: relative;
-  top: 30%;
-  transform: translate(0%, -30%);
   overflow-wrap: break-word;
   word-wrap: break-word;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
   /*
   border: 1px solid white;
   */
 }
 
-.header {
+.header{
+  margin-top: 15%;
+}
+.header_body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   cursor: pointer;
 }
-.header:hover,
-.header:active {
+.header_body:hover,
+.header_body:active {
   text-shadow: 0px 0px 20px #12aee1;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
@@ -224,6 +238,10 @@ td {
   -o-user-select: none;
   user-select: none;
 }
+.header_below{
+  margin-top: 15%;
+}
+
 .my_name {
   font-size: 60px;
   font-weight: 900;
@@ -234,13 +252,32 @@ td {
   opacity: 0.5;
 }
 
-.intro_board{
-  background: #2226;
+.intro_board, .about_board{
+  background: #222226de;
+  opacity: 0.8;
   text-align: center;
-  margin-top: 15%;
+  max-width: 991px;
+  margin: auto;
   padding: 10px;
+  overflow: auto;
+  margin-bottom: 8%;
 }
-
+.intro_txt, .about_txt{
+  font-family: "Titillium Web";
+  font-size: 125%;
+}
+.intro_board{
+  margin-top: 5%;
+}
+.about_board{  
+  margin-top: -5%;
+  background: #222226de;
+  opacity: 0.8;
+  border-left: 10px solid #517f849e;
+  border-right: 5px solid #517f849e;
+  border-radius: 2px;
+  padding: 2%;
+}
 .get_in_touch_btn {
   background: #32313d url("../imgs/email.svg") no-repeat;
   background-position: left;
@@ -303,94 +340,6 @@ td {
   height: 100vh;
   width: 100%;
   max-width: 400px;
-}
-.options_pane {
-  width: 100%;
-  /*position: fixed;*/
-  bottom: 0;
-  max-height: 50vh;
-  cursor: pointer;
-}
-.options_pane_sub {
-  margin: 0 3%;
-  padding-left: 10px;
-  margin-bottom: 3px;
-  background: rgba(0, 0, 0, 0.5);
-}
-.options_pane_flex {
-  display: flex;
-  flex-wrap: nowrap;
-  text-align: center;
-  overflow: hidden;
-  overflow-x: auto;
-  padding: 3px 5px;
-  position: relative;
-  margin: 3px 1px;
-}
-.options_pane_flex > * {
-  margin: 0 8px;
-  text-align: center;
-}
-.get_in_touch_i,
-.journal_i {
-  width: 100px;
-  height: 60px;
-  border: 3px solid rgba(0, 0, 0, 0);
-  padding: 4px;
-}
-.get_in_touch_i:hover,
-.journal_i:hover {
-  border: 3px solid #444;
-}
-.connect_wa {
-  background: #252324 url("../imgs/whatsapp.svg") no-repeat;
-  background-position: bottom left;
-  background-size: 70px 70px;
-}
-.journal_works {
-  background: #252324 url("../imgs/works.svg") no-repeat;
-  background-position: bottom left;
-  background-size: 70px 70px;
-}
-.journal_articles {
-  background: #252324 url("../imgs/article.svg") no-repeat;
-  background-position: bottom left;
-  background-size: 70px 70px;
-}
-.language_brd {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  border: 1px solid rgba(200, 200, 200, 0.5);
-}
-.language_brd:hover {
-  background-size: 28px 28px;
-  border: 1px solid rgba(200, 200, 200, 0.2);
-}
-.js_img {
-  background: #252324 url("../imgs/js.svg") no-repeat;
-  background-position: bottom left;
-  background-size: 20px 20px;
-}
-.php_img {
-  background: #252324 url("../imgs/php.svg") no-repeat;
-  background-position: bottom left;
-  background-size: 20px 20px;
-}
-.toon {
-  background: #252324 url("../imgs/cartoon.jpeg") center no-repeat;
-  background-size: contain;
-  width: 200px;
-  height: 200px;
-  border: 10px solid #252324;
-  border: 10px solid rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
-.first_loader {
-  width: 100vw;
-  height: 100%;
-  background: #111 url("../imgs/icon_loading.gif") no-repeat center center;
-  background-size: 50px 50px;
 }
 
 

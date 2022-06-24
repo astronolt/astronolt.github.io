@@ -1,9 +1,3 @@
-$(window).bind("load", function() {
-  $("#cover").fadeOut(200);
-  $("header").fadeIn(200);
-});
-
-
 $(document).ready(function() {
   $('.has-animation').each(function(index) {
     $(this).delay($(this).data('delay')).queue(function(){
@@ -11,15 +5,18 @@ $(document).ready(function() {
     });
   });
   
+  /*
   //Show share button
   if ("share" in navigator) {
     $(".share_website").show();
   }
+  */
 });
 
 
 //TRIGGER WHEN BUTTON NOT CLICKED
 $(document).mouseup(function(e) {
+  /*
   var jelos_sec = $(".options_pane");
   var other_sec = $(".get_in_touch");
   // if the target of the click isn't the container nor a descendant of the container
@@ -27,6 +24,7 @@ $(document).mouseup(function(e) {
     jelos_sec.fadeOut(200);
     get_in_touch.fadeOut(100);
   }
+  */
 });
 
 
@@ -39,17 +37,9 @@ $(".jounal_btn").click(function() {
   container_switch();
 });
 
-$(".close_about").click(function() {
-  $(".main_container").hide(500);
-  $(".header").show(200);
-});
-
-$(".get_in_touch_btn").click(function() {
-  /*
-  $(".journal").hide();
-  $(".options_pane").show(100);
-  $(".get_in_touch").show(300);
-  */
+$(".about_btn").click(function() {
+  $(".header_below").slideToggle(200);
+  $(".about_board").slideToggle(150);
 });
 
 $(".jounal_btn").click(function() {
