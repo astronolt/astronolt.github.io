@@ -1,7 +1,10 @@
 @media only screen and (min-width: 1200px){
   .header{
     margin-top: 10%;
-  } 
+  }
+  .header_below{   
+    margin-top: 5%;
+  }
 }
  
 
@@ -12,7 +15,13 @@
 
 /* start of medium tablet styles */  
 @media only screen and (max-width: 767px){
-
+ .more_about{
+  display: block;
+ }
+ .more_about_profile{
+  max-width: 300px;
+  margin: auto;
+ }
 }
   
   /* start of phone styles */
@@ -23,10 +32,13 @@
   .my_name{
     font-size: 15vw;
   }
+  .catchup{
+    margin: auto;
+  }
 }
 
 /* start of phone styles */
-@media only screen and (max-width: 163px){
+@media only screen and (max-width: 164px){
   .header {
     display: block;
   }

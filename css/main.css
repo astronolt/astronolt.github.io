@@ -142,6 +142,7 @@ td {
   margin: 5px;
   cursor: pointer;
   min-height: 35px;
+  min-width: 100px;
 }
 .button:hover {
   background: #444;
@@ -266,6 +267,13 @@ td {
   font-family: "Titillium Web";
   font-size: 125%;
 }
+.intro_txt{
+  margin-top: 20px;
+}
+.intro_action{
+  margin-top: 50px;
+}
+
 .intro_board{
   margin-top: 5%;
 }
@@ -278,6 +286,44 @@ td {
   border-radius: 2px;
   padding: 2%;
 }
+.about_txt{
+  min-width: 300px;
+}
+.about_txt p{
+  margin:auto;
+  margin-top: 10%;
+  padding:5%;
+}
+.more_about{
+  display: flex;
+  width: 100%;
+}
+
+.profile_image{
+  background: #caafca;
+  width:300px;
+  border-radius: 50%;
+}
+.profile_image img{
+  width:100%;
+  border-radius: 35%;
+}
+.profile_summary{
+  position: relative;
+  background: #000;
+  border:5px solid #3334;
+  text-align: right;
+  margin-top: -15%;
+  padding:10px;
+}
+.profile_summary_name{
+  font-size: 150%;
+  font-weight: 600;
+}
+.profile_summary_description{
+  font-size: 90%;
+}
+
 .get_in_touch_btn {
   background: #32313d url("../imgs/email.svg") no-repeat;
   background-position: left;
@@ -327,6 +373,22 @@ td {
 .more_info_btns{  
   /*font-family: "Cuprum";*/
   font-stretch: expanded;
+}
+
+.catchup{
+  display: flex;
+  text-align:left;
+  margin-top: 20px;
+  padding:5px;
+  background: #15303c;
+  border: 2px solid #32313d;
+  min-width: 300px;
+  width: fit-content;
+}
+
+.catchup_body{
+  margin: auto;
+  text-align: center;
 }
 .close_about {
   position: relative;
