@@ -40,6 +40,13 @@ $(".jounal_btn").click(function() {
 $(".about_btn").click(function() {
   $(".header_below").slideToggle(200);
   $(".about_board").slideToggle(150);
+  setTimeout(function(){
+    $(".about_board")[0].scrollIntoView({
+      behavior: "smooth", // or "auto" or "instant"
+      block: "start" // or "end"
+    });
+  }, 160);
+  
 });
 
 $(".jounal_btn").click(function() {
@@ -78,8 +85,8 @@ function openTab(evt, tabName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  tabData = document.getElementById(tabName);  
+  tabData = document.getElementById(tabName);
   tabData.style.display = "block";
-  tabData.scrollIntoView();
+  tabData.scrollIntoView({behavior: "smooth"});
   evt.currentTarget.className += " active";
 } 
