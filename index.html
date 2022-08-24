@@ -61,13 +61,13 @@
           </a>
           
           <div class="intro_action">
-            <button class="button jounal_btn has-animation animation-rtl" style="display: none;" data-delay="1000"> My Journal </button>
+            <button class="button jounal_btn has-animation animation-rtl display_none" data-delay="1000"> My Journal </button>
 
-            <button class="button about_btn has-animation animation-ltr" data-delay="2000"> More About Me </button>
+            <button class="button about_btn has-animation animation-ltr" data-delay="2000"> About Me </button>
           </div>
         </div>
 
-        <div class="about_board display_none">
+        <div class="about_board display_none/">
           <div class="more_about">
 
             <div class="about_txt">
@@ -83,7 +83,7 @@
             <div class="more_about_profile">
               <div class="profile_image">
                 <img src="imgs/odinaka.png" alt="odinaka">
-              </div>              
+              </div>
               <div class="profile_summary">              
                 <div class="profile_summary_name">
                   Emmanuel Odinaka
@@ -94,9 +94,10 @@
                   <div>Drum Enthusiast</div>
                 </div>
               </div>
-            </div>
-          </div>          
+            </div>  
+          </div>
 
+          
           <div class="catchup">            
             <div class="catchup_body">                
               <h3> Catch-up </h3>
@@ -114,6 +115,87 @@
               </a>
             </div>
           </div>
+
+          
+          <!-- Tab links -->
+          <div class="tech-stack">
+            <h3>Technologies I work with</h3>
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'language')">
+                Language
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'framework')">
+                Framework
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'database')">
+                Database
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'versionControl')">
+                Version Control
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'solution')">
+                Solutions
+              </button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="language" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>PHP</li>
+                   <li>Javascript</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="framework" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>Laravel</li>
+                   <li>Node Js</li>
+                   <li>Vue Js</li>
+                   <li>React</li>
+                   <li>Express</li>
+                   <li>Tailwind</li>
+                   <li>JQuery</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="database" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>SQL</li>
+                   <li>Firebase</li>
+                   <li>IndexedDB</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div id="versionControl" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>Git</li>
+                   <li>Github</li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="solution" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>API</li>
+                   <li>IMAP</li>
+                   <li>SMTP</li>
+                   <li>PWA</li>
+                   <li>PUSH</li>
+                   <li>SPA</li>
+                   <li>MPA</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
 
         </div>
 

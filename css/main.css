@@ -405,6 +405,73 @@ td {
 }
 
 
+.tech-stack{
+  text-align:left;
+  margin-top: 25px;
+  padding:5px;
+  background: #1a1d1e;
+  border: 2px solid #32313d;
+  min-width: 300px;
+  width: fit-content;
+}
+.tech-stack h3{
+  color: #aaa;
+}
+
+/** TAB **/
+.tab {
+  border-bottom: 2px solid #cacbcc;
+  color: #000;
+  margin: auto;
+  min-width:100px;
+}
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 15px;
+  margin: 5px 2px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  min-width: 100px;
+  transition: 0.3s;
+}
+.tab button:hover {
+  background-color: #ddd;
+}
+.tab button.active {
+  background-color: #753a3a;
+  border-bottom: 4px solid #333;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  transition: width 1s;
+}
+
+
+.list ul {
+  list-style:none;
+  cursor: text
+}
+.list ul li {
+  min-width:100px;
+  margin:3px 3px 5px;
+  background-color:#333;
+  border-left:5px solid #222;
+  border-right:5px solid #222;
+  padding:5px;
+  padding-left:10px;
+  text-decoration:none; color:#bfe1f1;
+}
+.list ul li:hover {
+  -moz-box-shadow:10px 10px 20px #000000;
+  -webkit-box-shadow:10px 10px 20px #000000;
+  box-shadow:10px 10px 20px #000000; 
+}
+
+
 /* MISC */
 .margin_auto {
   margin: auto;
