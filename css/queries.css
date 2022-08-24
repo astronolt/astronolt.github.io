@@ -35,6 +35,9 @@
   .catchup, .tech-stack{
     margin: auto;
   }
+  .tech-stack{
+    margin-top: 10px;
+  }
 }
 
 /* start of phone styles */
