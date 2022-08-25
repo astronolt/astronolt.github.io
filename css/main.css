@@ -412,20 +412,21 @@ td {
   background: #1a1d1e;
   border: 2px solid #32313d;
   min-width: 300px;
-  width: fit-content;
 }
 .tech-stack h3{
   color: #aaa;
 }
 
 /** TAB **/
-.tab {
+.tech-stack-tab {
+  white-space: nowrap;
+  overflow-x: auto;
   border-bottom: 2px solid #cacbcc;
   color: #000;
   margin: auto;
   min-width:100px;
 }
-.tab button {
+.tech-stack-tab button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -436,10 +437,10 @@ td {
   min-width: 100px;
   transition: 0.3s;
 }
-.tab button:hover {
+.tech-stack-tab button:hover {
   background-color: #ddd;
 }
-.tab button.active {
+.tech-stack-tab button.active {
   background-color: #753a3a;
   border-bottom: 4px solid #333;
 }
