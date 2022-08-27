@@ -22,6 +22,9 @@
   max-width: 300px;
   margin: auto;
  }
+ .about_board{    
+   margin-bottom: 15vh;
+ }
 }
   
   /* start of phone styles */

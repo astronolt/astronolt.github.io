@@ -61,9 +61,16 @@
           </a>
           
           <div class="intro_action">
-            <button class="button jounal_btn has-animation animation-rtl display_none" data-delay="1000"> My Journal </button>
-
-            <button class="button about_btn has-animation animation-ltr" data-delay="2000"> About Me </button>
+            <div>            
+              <button class="button jounal_btn has-animation animation-rtl display_none" data-delay="1000">
+                My Journal
+              </button>
+            </div>
+            <div>
+              <button class="button about_btn has-animation animation-ltr" data-delay="2000">
+                About Me
+              </button>
+            </div>
           </div>
         </div>
 
@@ -71,13 +78,17 @@
           <div class="more_about">
 
             <div class="about_txt">
-              <p>
-                I develop, manage the front-end and back-end of web applications and also support agencies with creative development.
-                <br />
-                Whether you're setting up an intranet for your company, a project web app for your team, a portal for customers, or just trying to revamp and tell a new story on your webpage. 
-                <br />
-                I can be a part of the development that works on all the steps of the web application. 
-              </p>
+              <div>
+                <p>
+                  I develop, manage the front-end and back-end of web applications and also support agencies with creative development.
+                </p>
+                <p>
+                  Whether you're setting up an intranet for your company, a project web app for your team, a portal for customers, or just trying to revamp and tell a new story on your webpage. 
+                </p>
+                <p>
+                  I can be a part of the development that works on all the steps of the web application. 
+                </p>
+              </div>
             </div>
 
             <div class="more_about_profile">
@@ -133,6 +144,9 @@
               <button class="tablinks" onclick="openTab(event, 'versionControl')">
                 Version Control
               </button>
+              <button class="tablinks" onclick="openTab(event, 'serverOps')">
+                Server Ops
+              </button>
               <button class="tablinks" onclick="openTab(event, 'solution')">
                 Solutions
               </button>
@@ -166,7 +180,7 @@
               <div class="list">
                 <ul>
                    <li>SQL</li>
-                   <li>Firebase</li>
+                   <li>Cloud Firestore</li>
                    <li>IndexedDB</li>
                 </ul>
               </div>
@@ -181,6 +195,18 @@
               </div>
             </div>
 
+            <div id="serverOps" class="tabcontent">
+              <div class="list">
+                <ul>
+                   <li>CPanel / WHM</li>
+                   <li>Firebase</li>
+                   <li>Heroku</li>
+                   <li>Apache</li>
+                   <li>Cloudflare</li>
+                </ul>
+              </div>
+            </div>
+
             <div id="solution" class="tabcontent">
               <div class="list">
                 <ul>
@@ -188,7 +214,8 @@
                    <li>IMAP</li>
                    <li>SMTP</li>
                    <li>PWA</li>
-                   <li>PUSH</li>
+                   <li>Browser Extension</li>
+                   <li>Push Notification</li>
                    <li>SPA</li>
                    <li>MPA</li>
                 </ul>

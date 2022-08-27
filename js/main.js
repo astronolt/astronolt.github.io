@@ -55,6 +55,30 @@ $(".jounal_btn").click(function() {
   $(".journal").show(300);
 });
 
+
+
+//FETCH
+/*
+fetch(url, option);
+//optional
+let options = {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json;charset=utf-8'
+  },
+  body: JSON.stringify(data)
+}
+
+fetch("https://odicodes.github.io/")
+.then((result) => { return result.text(); })
+.then((content) => {
+  alert(content);
+  //document.getElementById("ID").innerHTML = content;
+});
+*/
+
+
+
 /*
 $(".share_website").click(function() {
   navigator
