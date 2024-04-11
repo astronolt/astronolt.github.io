@@ -33,12 +33,10 @@ function container_switch(){
   $(".main_container").fadeIn(400);
 }
 
-$(".jounal_btn").click(function() {
-  container_switch();
-});
 
 $(".about_btn").click(function() {
   $(".header_below").slideToggle(200);
+  $(".projects_board").hide(100);
   $(".about_board").slideToggle(150);
   setTimeout(function(){
     $(".about_board")[0].scrollIntoView({
@@ -49,11 +47,19 @@ $(".about_btn").click(function() {
   
 });
 
-$(".jounal_btn").click(function() {
-  $(".get_in_touch").hide();
-  $(".options_pane").show(100);
-  $(".journal").show(300);
+$(".projects_btn").click(function() {
+  $(".header_below").slideToggle(200);
+  $(".about_board").hide(100);
+  $(".projects_board").slideToggle(150);
+  setTimeout(function(){
+    $(".projects_board")[0].scrollIntoView({
+      behavior: "smooth", // or "auto" or "instant"
+      block: "start" // or "end"
+    });
+  }, 160);
+  
 });
+
 
 
 

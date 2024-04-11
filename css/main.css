@@ -142,7 +142,7 @@ td {
   margin: 5px;
   cursor: pointer;
   min-height: 35px;
-  min-width: 100px;
+  min-width: 140px;
 }
 .button:hover {
   background: #444;
@@ -253,7 +253,7 @@ td {
   opacity: 0.5;
 }
 
-.intro_board, .about_board{
+.intro_board, .about_board, .projects_board{
   background: #222226de;
   opacity: 0.8;
   text-align: center;
@@ -407,6 +407,22 @@ td {
   max-width: 400px;
 }
 
+/* PROJECTS */
+.project_item {
+  background: #32313d url("../imgs/email.svg") no-repeat;
+  background-position: left;
+  background-size: 30px 30px;
+  height: 40px;
+  padding:10px;
+  padding-left: 42px;
+  border: 2px solid #fff6;
+  margin: 10px 2px;
+  cursor: pointer;
+}
+.project_item:hover {
+  background-color: #412d37;
+  border: 2px solid #bbb2;
+}
 
 .tech-stack{
   text-align:left;
