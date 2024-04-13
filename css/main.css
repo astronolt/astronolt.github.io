@@ -412,8 +412,6 @@ td {
   /* max-width: 800px; */
   margin: 20px auto;
   /* overflow: hidden; */
-  background-color: #eee9;
-  color: #000;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -426,6 +424,7 @@ td {
   flex-direction: row;
   align-items: center;
   padding: 20px;
+  background-color: #eee9;
   color: #000;
 
   min-height: 100px;
