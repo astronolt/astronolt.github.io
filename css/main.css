@@ -437,8 +437,8 @@ td {
   cursor: pointer;
 }
 .project:hover {
-  /* background-color: #412d37;
-  color: white; */
+  background-color: #f9f9f9;
+  /* color: white; */
   /* border: 2px solid #bbb2; */
   border-bottom: 1px solid #eee;
   /* border-left: 15px solid rgba(15, 128, 136, 0.4); */
@@ -456,7 +456,7 @@ td {
   text-align: left;
 }
 .project-details:hover {
-  color: #222;
+  color: #1a3b9d;
 }
 
 .project-title {
