@@ -85,16 +85,15 @@
               <div class="about_txt">
                 <div>
                   <p>
-                    I use technology to engineer full-stack solutions by designing programs and systems.
+                    I use technology to engineer full-stack solutions by
+                    designing programs and systems.
                   </p>
                   <p>
                     Whether you're setting up an intranet for your company, a
                     custom software for your team, a portal for customers, or
                     just trying to revamp and tell a new story on your webpage.
                   </p>
-                  <p>
-                    I can be a part of your development journey.
-                  </p>
+                  <p>I can be a part of your development journey.</p>
                 </div>
               </div>
 
@@ -130,12 +129,12 @@
                     Github
                   </button>
                 </a>
-                <a href="https://medium.com/@odinaka.dev" target="_blank">
+                <!-- <a href="https://medium.com/@odinaka.dev" target="_blank">
                   <button class="button">
                     <img src="imgs/medium.svg" alt="github" width="25px" />
                     Medium
                   </button>
-                </a>
+                </a> -->
               </div>
             </div>
 
@@ -143,7 +142,7 @@
             <div class="tech-stack">
               <h3>Technologies I work with</h3>
               <div class="tech-stack-tab">
-                <button
+                <button id="defaultOpen"
                   class="tablinks"
                   onclick="openTab(event, 'language-framework')"
                 >
@@ -165,7 +164,10 @@
                   DevOps
                 </button>
 
-                <button class="tablinks" onclick="openTab(event, 'services-solutions')">
+                <button
+                  class="tablinks"
+                  onclick="openTab(event, 'services-solutions')"
+                >
                   Services & Solutions
                 </button>
               </div>
@@ -180,10 +182,15 @@
                     <li>PHP</li>
                     <li>Laravel</li>
                     <li>Python</li>
+                    <li>Bash</li>
                     <li>C Language</li>
+                    <li>Flutter</li>
                     <li>React</li>
+                    <li>Next</li>
+                    <li>Electron</li>
                     <li>Angular</li>
                     <li>Vue</li>
+                    <li>SCSS</li>
                     <li>Tailwind</li>
                   </ul>
                 </div>
@@ -236,6 +243,8 @@
                     <li>Open AI</li>
                     <li>Payment Gateways</li>
                     <li>AWS</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
                     <li>Project Management</li>
                     <li>API Development</li>
                     <li>Firebase</li>
@@ -253,29 +262,32 @@
                   </ul>
                 </div>
               </div>
-
             </div>
           </div>
 
-
           <div class="projects_board display_none">
-            <h2 style="margin-bottom: 30px;">
-              <u>Projects</u>
+            <h2 style="margin-bottom: 30px">
+              <u>Projects & Experience</u>
             </h2>
 
             <div class="project">
               <img src="imgs/8wonder_org.png" alt="Project 1" />
               <div class="project-details">
                 <h2 class="project-title">
-                  <a href="https://8wonder.org" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://8wonder.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     THE 8WONDER IDEA
                   </a>
                 </h2>
+                <h4>Technology Company</h4>
                 <p class="project-description">
-                  <h4>                    
-                    Technology Company
-                  </h4>
-                  An innovative solutions company that uses research and development to drive business growth. Providing insights into the market and also develop new services & products or improving services & products already existing.
+                  An innovative solutions company that uses research and
+                  development to drive business growth. Providing insights into
+                  the market and also develop new services & products or
+                  improving services & products already existing.
                 </p>
               </div>
             </div>
@@ -284,24 +296,21 @@
               <img src="imgs/8wonder_org.png" alt="Project 1" />
               <div class="project-details">
                 <h2 class="project-title">Marchant Business</h2>
+                <h4>E-Commerce App</h4>
                 <p class="project-description">
-                  <h4>
-                    E-Commerce App
-                  </h4>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   eget felis nec ante mattis semper. Donec eget nisi sit amet
                   odio vehicula dignissim.
                 </p>
               </div>
             </div>
-
           </div>
 
-          <div class="projects_board display_none">
+          <!-- <div class="projects_board display_none">
             <h2 style="margin-bottom: 30px;">
               <u>Open Source</u>
             </h2>
-          </div>
+          </div> -->
 
           <div>
             <!-- <div
@@ -338,7 +347,6 @@
     <!-- BOTTOM SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script>
-
       var fog_speed = 0.5;
 
       VANTA.FOG({

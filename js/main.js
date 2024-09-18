@@ -120,3 +120,5 @@ function openTab(evt, tabName) {
   tabData.scrollIntoView({behavior: "smooth"});
   evt.currentTarget.className += " active";
 } 
+
+document.getElementById("defaultOpen").click();
